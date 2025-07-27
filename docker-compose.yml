@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  stt:
+    build: ./stt
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./models/vosk:/app/model
